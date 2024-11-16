@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Agenda de contatos</string>
+    <string name="btn_cadastrar">+</string>
+    <string name="contatos_title">Contatos</string>
 </resources>
