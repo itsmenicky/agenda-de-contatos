@@ -1,6 +1,6 @@
 plugins {
-    alias(libs.plugins.android.application)
-    alias(libs.plugins.kotlin.android)
+    id("com.android.application")
+    id("kotlin-android")
     id("kotlin-kapt")
 }
 
@@ -10,7 +10,7 @@ android {
 
     defaultConfig {
         applicationId = "com.itsmenicky.agendadecontatos"
-        minSdk = 24
+        minSdk = 27
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
@@ -33,6 +33,10 @@ android {
     }
     kotlinOptions {
         jvmTarget = "1.8"
+    }
+
+    viewBinding{
+        enable = true
     }
 }
 
