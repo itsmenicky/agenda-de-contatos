@@ -13,7 +13,7 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:background="@color/darkGrey"
-        tools:context=".cadastro_usuario">
+        tools:context=".CadastroUsuario">
 
         <ImageView
             android:id="@+id/imageView"
@@ -26,7 +26,7 @@
             android:id="@+id/txt_nome"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Nome"
+            android:hint="@string/input_nome"
             android:textColorHint="@color/lightGrey"
             android:inputType="text"
             android:textColor="@color/white"
@@ -40,7 +40,7 @@
             android:id="@+id/txt_sobrenome"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Sobrenome"
+            android:hint="@string/input_sobrenome"
             android:textColorHint="@color/lightGrey"
             android:inputType="text"
             android:textColor="@color/white"
@@ -54,7 +54,7 @@
             android:id="@+id/txt_telefone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Telefone"
+            android:hint="@string/input_telefone"
             android:textColorHint="@color/lightGrey"
             android:inputType="number"
             android:textColor="@color/white"
@@ -66,13 +66,14 @@
             android:layout_marginEnd="20dp"
             />
         <Button
+            android:id="@+id/adicionar_contato"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
             android:backgroundTint="@color/blue"
-            android:text="Adicionar"
+            android:text="@string/btn_adicionar"
             android:textStyle="bold"/>
     </LinearLayout>
 </ScrollView>

@@ -2,4 +2,8 @@
     <string name="app_name">Agenda de contatos</string>
     <string name="btn_cadastrar">+</string>
     <string name="contatos_title">Contatos</string>
+    <string name="btn_adicionar">Adicionar</string>
+    <string name="input_telefone">Telefone</string>
+    <string name="input_sobrenome">Sobrenome</string>
+    <string name="input_nome">Nome</string>
 </resources>
