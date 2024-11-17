@@ -11,7 +11,7 @@
         android:textSize="18sp"
         android:layout_marginTop="10dp"
         android:textStyle="bold"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:text="Nome"/>
     <TextView
         android:id="@+id/txt_view_contato_sobrenome"
@@ -20,6 +20,6 @@
         android:textSize="18sp"
         android:layout_marginTop="10dp"
         android:paddingStart="5sp"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:text="Sobrenome"/>
 </LinearLayout>

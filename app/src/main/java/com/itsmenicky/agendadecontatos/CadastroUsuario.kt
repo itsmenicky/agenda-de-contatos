@@ -24,20 +24,30 @@ class CadastroUsuario : AppCompatActivity() {
         sobrenome = findViewById(R.id.txt_sobrenome)
         telefone = findViewById(R.id.txt_telefone)
 
-        val contatosAdapter = ContatosAdapter()
-
         btn_cadastrar.setOnClickListener{
-            val contato = Usuario(
-                nome = nome.text.toString(),
-                sobrenome = sobrenome.text.toString(),
-                telefone = telefone.text.toString().toIntOrNull()
-            )
+            if(nome.text.isNotEmpty() && sobrenome.text.isNotEmpty() && telefone.text.isNotEmpty()){
+                val contato = Usuario(
+                    nome = nome.text.toString(),
+                    sobrenome = sobrenome.text.toString(),
+                    telefone = telefone.text.toString().toIntOrNull()
+                )
 
-            val resultIntent = Intent()
-            resultIntent.putExtra("contato", contato)
+                val resultIntent = Intent()
+                resultIntent.putExtra("contato", contato)
 
-            setResult(Activity.RESULT_OK, resultIntent)
-            finish()
+                setResult(Activity.RESULT_OK, resultIntent)
+                finish()
+            }else{
+                if(nome.text.isEmpty()){
+                    nome.error = "Por favor, preencha o campo!"
+                }
+                if(sobrenome.text.isEmpty()){
+                    sobrenome.error = "Por favor, preencha o campo!"
+                }
+                if(telefone.text.isEmpty()){
+                    telefone.error = "Por favor, preencha o campo!"
+                }
+            }
         }
     }
 }
