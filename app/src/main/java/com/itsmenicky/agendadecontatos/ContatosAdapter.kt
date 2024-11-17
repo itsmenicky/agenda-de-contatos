@@ -29,9 +29,11 @@ class ContatosAdapter: RecyclerView.Adapter<ContatosAdapter.ContatoViewHolder>()
         holder.bind(contato)
     }
     class ContatoViewHolder(view: View): RecyclerView.ViewHolder(view) {
-        val textView = view.findViewById<TextView>(R.id.txt_view_contato)
+        val textNome = view.findViewById<TextView>(R.id.txt_view_contato_nome)
+        val textSobrenome = view.findViewById<TextView>(R.id.txt_view_contato_sobrenome)
         fun bind(contato: Usuario){
-            textView.text = contato.nome
+            textNome.text = contato.nome
+            textSobrenome.text = contato.sobrenome
         }
     }
 }
